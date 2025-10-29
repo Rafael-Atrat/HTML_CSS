@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&display=swap');
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+h1{
+    font-family: 'Shadows Into Light','Times New Roman', Times, serif;
+    font-size: 4em;
+}
+
+h2{
+    font-family: 'Miltonian','Times New Roman', Times, serif;
+    font-size: 2em;
+}

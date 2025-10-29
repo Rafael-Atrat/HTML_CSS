@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url('./fonts/OldLondon.ttf') format('truetype'),
+         url('./fonts/Olondona.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
+h1 {
+    font-family: 'MinhaFonte', serif; /* usa a fonte que você nomeou */
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-family: 'MinhaFonte',serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+p{
+    font-family: 'Miltonian',Arial, Helvetica, sans-serif;
+}
