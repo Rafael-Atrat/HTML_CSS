@@ -1,0 +1,41 @@
+/* =========================
+   AJUSTES ESPECÍFICOS DO CADASTRO
+========================= */
+
+/* O formulário de cadastro costuma ser mais alto */
+form {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* Botão menos chamativo que o login */
+button {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(90, 90, 210, 0.6),
+    rgba(90, 90, 210, 0.9)
+  );
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(90, 90, 210, 0.8),
+    rgb(90, 90, 210)
+  );
+}
+
+/* Link "Já tem conta?" mais discreto */
+.link a {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* Inputs de data costumam parecer menores — ajuste visual */
+input[type="date"] {
+  padding-left: 10px;
+}
+
+input{
+    padding-left: 10px;
+}
