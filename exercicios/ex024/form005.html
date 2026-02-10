@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario05</title>
+</head>
+<body>
+
+    <h1>Formulário com Select, Datalist e textarea</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Teste Select</legend>
+
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="" selected>---Selecione---</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espirito Santo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+
+                </optgroup>
+
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Teste Datalist</legend>
+
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" id="prof" list="opt">
+            <datalist id="opt">
+                <option value="adm">Administrador</option>
+                <option value="adv">Advogado</option>
+                <option value="dev">Desenvolvedor</option>
+            </datalist>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>TextArea</legend>
+
+            <label for="msgm">Mensagem:</label>
+            <textarea name="msgm" id="msgm" cols="30" rows="10" placeholder="Seu texto aqui"></textarea>
+        </fieldset><br>
+
+        <input type="submit" value="Enviar"> <input type="reset" value="Limpar">
+
+    </form>
+    
+</body>
+</html>
