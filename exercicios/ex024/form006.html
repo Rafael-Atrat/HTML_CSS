@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+
+    <h1>Output</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Treinando output</legend>
+
+            <p>
+                <label for="n1">Numero 1:</label>
+                <input type="number" name="n1" id="n1" min="0" max="50" required oninput="ires.innerHTML=Number(n1.value)+Number(n2.value)">
+                
+            </p>
+
+            <p>
+                <label for="n2">Numero 2:</label>
+                <input type="number" name="n2" id="n2" min="0" max="50" required oninput="ires.innerHTML=Number(n1.value)+Number(n2.value)">
+            </p>
+
+            <p>
+                <label for="res">Resultado</label>
+                <output id="ires">0</output>
+            </p>
+
+
+
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Range</legend>
+
+            <p>
+                <label for="num">Número</label>
+                <input type="range" name="num" id="num" min="0" max="15" value="0" oninput="inum.innerHTML=Number(num.value)">
+                <output id="inum">0</output>
+
+                
+            </p>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Outro teste</legend>
+
+            <p>
+                <label for="ano">Qual ano você nasceu?</label>
+                <input type="number" name="ano" id="ano" required min="1900" max="2026" oninput="calc()">
+            </p>
+
+            <p>
+                <label for="iano">Sua idade é: </label>
+                <output id="iano">0</output>
+            </p>
+        </fieldset><br>
+
+        
+    </form>
+    
+    <script>
+
+        function calc(){
+
+            var atual= new Date().getFullYear()
+            iano.innerHTML=Number(atual) - Number(ano.value)
+        }
+
+    </script>
+</body>
+</html>
